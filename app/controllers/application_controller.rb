@@ -17,6 +17,7 @@ class ApplicationController < Sinatra::Base
 
   get '/ice_creams/new' do
     "provide a form"
+    erb :new
   end
 
   post '/ice_creams' do
@@ -24,6 +25,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/ice_creams/:id' do
+    binding.pry
     "show"
   end
 
