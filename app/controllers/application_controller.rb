@@ -21,6 +21,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/ice_creams' do
+    IceCream.create(params)
     "take in form input and create through controller"
   end
 
